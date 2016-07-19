@@ -1,0 +1,16 @@
+#edd9c0
+#c9d8c5
+#a8b6bf
+#7d4627
+
+
+# pastel green
+#DAF7A6  
+
+# rich dark blue
+#09157B
+
+# paler blue
+
+# greener blue
+#09797B
