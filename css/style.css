@@ -68,6 +68,15 @@ a:focus {
     text-align: center;
     vertical-align: middle;
 }
+.entry {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.entry a:link{
+    font-weight: bold;
+}
+
+
 .space { padding-top: 40px }
 .tiny_space { padding-top: 5px }
 .padding-right { padding-left: 10px }
