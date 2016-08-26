@@ -12,7 +12,7 @@ html {
 }
 body {
   margin: 0;
-  padding-top: 75px; 
+  padding-top: 75px;
 }
 article,
 aside,
@@ -3927,6 +3927,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   right: 0;
   left: 0;
   z-index: 1030;
+
 }
 @media (min-width: 768px) {
   .navbar-fixed-top,

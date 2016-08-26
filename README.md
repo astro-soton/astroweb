@@ -28,5 +28,26 @@ The navbars and footers are all contained within **css/bootstrap.css**. I don't 
 
 **css/slit_slider.css** contains some css for the original slider Poshak had on the site. I can't get this to work yet, so have a go.
 
+## Adding Headers
+Please us the `header.html` file to change the header/banner. This is a universal template so at the start of new pages use this javascript I have written to implement the header:
+```javascript
+<script src="js/jquery.1.11.1.js"></script>
+<script>
+$(function(){
+  $("#header").load("header.html");
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('body').hide();
+    $(window).load(function(){
+        $('body').show();
+    });
+});
+</script>
+<title>Home | Soton Astro</title>
+<div id="header"></div>
+```
+
 
 
