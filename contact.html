@@ -1,117 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Southampton Astronomy Group</title>
-    <meta name="author" content="Chris Frohmaier">
-
-    <!-- Favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
-
-    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
-
-    <!-- Stylesheet
-    ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slit-slider.css">
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
-
-    <!--Google Font-->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-
-
-  <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
-    <div id="header" class="text-left">
-
-      <div class = "row">
-        <div class="col-md-1">
-          <div class = "tiny_space"></div>
-          <div class = "tiny_space"></div>
-          <img src="img/quasar.png" width="100%" align="left" alt="...">
-        </div>
-        <div class="col-md-4">
-          <h1>Southampton Astronomy</h1>
-        </div>
-        <div class="col-md-3"></div>
-        <div class="col-md-4">
-          <img src="img/Soton_Uni_Logo.png" width="80%" align="right" alt="...">
-        </div>
-      </div>
-
-      <div class = "row">
-        <div class="col-md-6"=>
-          <h4>Supernovae, AGN, Accretion, Space Environment Physics and Galaxy Evolution</h4>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="navbar-collapse col-md-4" >  
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="work.html">Work/Study Here</a></li>
-                <!-- <li><a href="about-us">About Us</a></li> -->
-
-                <li><a href="outreach.html">Outreach</a></li>
-                <li><a href="internal.html">Internal</a></li>
-                <!--<li><a href="blog">Blog</a></li> -->
-                <li><a href="contact.html">People & Contact</a></li>
-                <!--li><a href="factfile.html">Factfile</a></li-->
-            </ul>
-        </div>
-      </div>
-    </div>
-  </header>
-
+<!-- Add the below to the top of each page -->
+<script src="js/jquery.1.11.1.js"></script>
+<script>
+$(function(){
+  $("#header").load("header.html");
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('body').hide();
+    $(window).load(function(){
+        $('body').show();
+    });
+});
+</script>
+<title>Home | Soton Astro</title>
+<div id="header"></div>
 
 <body>
   <!-- About Section -->
   <section id="about">
     <div class="space"></div> <!-- 40px Vertical Spacing -->
     <div class="space"></div> <!-- 40px Vertical Spacing -->
+    <div class="space"></div> <!-- 40px Vertical Spacing -->
+    <div class="space"></div> <!-- 40px Vertical Spacing -->
 
     <!-- <div class="title">
         <h2>About Us</h2>
     </div> -->
-
-    <div class="container"> <!-- Container -->
-      <div class="space"></div> <!-- 40px Vertical Spacing -->
+    <h1>Staff and Students</h1>
+    <p>To get more information about the non-astro staff members of the School of Physics and Astronomy, and their contact details, please use the "School links" menu on the right.</p>
+    <p>To phone from outside, dial the prefix <strong>+44-(0)23-8059</strong> and the last four numbers of the extension. Do NOT dial all five numbers of the extension after the prefix. To call from inside the university, simply dial the five digit extension number.
+      Our departmental fax number is <strong>+44-(0)-23-8059-3910</strong>. Please indicate the name of the addressee on the first page of the fax.</p>
+    <h3>Academics</h3>
+    <div class="container"> <!-- Container -->  
         <div class="row">
-          <div class="col-md-6" align="left">
-            <h2>About Us</h2>
-            The Astronomy group is part of Southampton Physics & Astronomy at the University of Southampton, which is currently ranked as a world top-30 Physics department. We are part of the larger Faculty of Physical and Applied Sciences, which brings together fundamental research with one of the UK's largest and strongest computer science departments. We are also part of the new STAG (Southampton Theory, Astronomy and Gravity) institute, which combines researchers across Physics, Astronomy and Mathematics, and SEPNET, a consortium of six partner universities in the South East Region of England for advancing and protecting Physics.
-            <br><br>
-            Research at Southampton Astronomy covers a broad range of astrophysical phenomena. We are interested in accretion onto, and emission from, compact objects of all sizes, galactic and extragalactic, and to understand how these compact objects interact with their environments. We also have world leading groups in high energy γ-ray and X-ray astrophysics, supernovae and dark energy, and transients from the γ-ray through the optical to the radio.
-          </div>
-          <div class="col-md-6" align="left">
-            <div class="space"></div> <!-- 40px Vertical Spacing -->
-            <img src="img/slides/3.jpg" width="80%" align="right" alt="...">
-          </div>
+            <div class="col-md-2 col-sm-2 col-lg-2">
+                <div class="t-style2">
+                    <img src="img/team/diego_altamirano_small.gif" class="img-responsive" alt="...">
+                    <h5>Dr. Diego Altamirano  <span class="t-position"> Lecturer</span></h5>
+                    <div class="t-social2"> <!-- Developer's Social Connect -->
+                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
+                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
+                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
+                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
+                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
+                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
+                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">d.altamirano</font></a></p>
+                         <!-- Replace # with Your Twitter URL -->
+                    </div>
+                    <div class="t-caption2">
+                    <h6>Black Hole Binaries and X-ray Timing</h6>
+                    </div>
+                </div>
+            </div>
 
-      </div>
-
+            <div class="col-md-2 col-sm-2 col-lg-2">
+                <div class="t-style2">
+                    <img src="img/team/tony_bird_small.gif" class="img-responsive" alt="...">
+                    <h5>Prof. Tony Bird  <span class="t-position">Director of Programs</span></h5>
+                    <div class="t-social2"> <!-- Developer's Social Connect -->
+                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
+                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
+                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
+                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
+                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
+                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
+                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">t.bird</font></a></p>
+                         <!-- Replace # with Your Twitter URL -->
+                    </div>
+                    <div class="t-caption2">
+                    <h6>High-mass X-ray binaries. High energy astrophysics.</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-2 padding">
+              <div class="t-style2">
+                <img src="img/team/2.jpg" class="img-responsive" alt="...">
+                  <h4>JENN LYN  <span class="t-position">/ Founder & CEO</span></h4>
+                  <div class="t-social2"> <!-- Developer's Social Connect -->
+                        <a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
+                        <a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
+                        <a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
+                        <a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
+                        <a href="#"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
+                        <a href="#"><i class="fa fa-twitter tsocial"></i></a> <!-- Replace # with Your Twitter URL -->
+                  </div>
+                  <div class="t-caption2">
+                  <h6>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Olypian quarrels et gorilla congolium sic ad nauseum.</h6>
+                  </div>
+                </div>
+            </div>
+        </div>       
     </div> <!-- End Container -->
+
 
 
     <div class="space"></div> <!-- 40px Vertical Spacing -->
