@@ -1,88 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Southampton Astronomy Group</title>
-    <meta name="author" content="Chris Frohmaier">
-
-    <!-- Favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
-
-    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
-
-    <!-- Stylesheet
-    ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slit-slider.css">
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
-
-    <!--Google Font-->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-
-
-  <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
-    <div id="header" class="text-left">
-
-      <div class = "row">
-        <div class="col-md-1">
-          <div class = "tiny_space"></div>
-          <div class = "tiny_space"></div>
-          <img src="img/quasar.png" width="100%" align="left" alt="...">
-        </div>
-        <div class="col-md-4">
-          <h1>Southampton Astronomy</h1>
-        </div>
-        <div class="col-md-3"></div>
-        <div class="col-md-4">
-          <img src="img/Soton_Uni_Logo.png" width="80%" align="right" alt="...">
-        </div>
-      </div>
-
-      <div class = "row">
-        <div class="col-md-6"=>
-          <h4>Supernovae, AGN, Accretion, Space Environment Physics and Galaxy Evolution</h4>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="navbar-collapse col-md-4" >  
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="work.html">Work/Study Here</a></li>
-                <!-- <li><a href="about-us">About Us</a></li> -->
-
-                <li><a href="outreach.html">Outreach</a></li>
-                <li><a href="internal.html">Internal</a></li>
-                <!--<li><a href="blog">Blog</a></li> -->
-                <li><a href="contact.html">People & Contact</a></li>
-                <!--li><a href="factfile.html">Factfile</a></li-->
-            </ul>
-        </div>
-      </div>
-    </div>
-  </header>
+<!-- Add the below to the top of each page -->
+<script src="js/jquery.1.11.1.js"></script>
+<script>
+$(function(){
+  $("#header").load("header.html");
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('body').hide();
+    $(window).load(function(){
+        $('body').show();
+    });
+});
+</script>
+<title>Internal | Soton Astro</title>
+<div id="header"></div>
+<!-- Add the above to the top of each page, change title to relevant page -->
 
 
 <body>
