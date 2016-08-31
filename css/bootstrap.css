@@ -4295,7 +4295,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 /* JM main colour of navbar hovers */
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #FFFF00;
+  color: #014359;
   background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .active > a,
