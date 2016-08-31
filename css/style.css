@@ -31,8 +31,9 @@ h2 {
     /*text-transform: uppercase;*/
 }
 h3 {
+    font-family: 'Georgia',  sans-serif;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: normal;
 }
 h4 {
     font-family: 'Lucida Sans',  sans-serif;
@@ -52,6 +53,7 @@ h6 {
 a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 a:hover,
 a:focus {
