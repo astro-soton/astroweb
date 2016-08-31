@@ -3205,7 +3205,7 @@ tbody.collapse.in {
   font-size: 14px;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  /*background-color: #fff;*/
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #ccc;
@@ -3306,12 +3306,16 @@ tbody.collapse.in {
   bottom: 100%;
   margin-bottom: 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 100px) {
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto;
   }
   .navbar-right .dropdown-menu-left {
+    right: auto;
+    left: 0;
+  }
+  .navbar-right .dropdown-header {
     right: auto;
     left: 0;
   }
@@ -3939,6 +3943,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: 0;
   border-width: 0 0 0px;
   background-image: url(img/slides/2.jpg);
+  margin-bottom: 0;
 }
 .navbar-fixed-bottom {
   bottom: 0;
@@ -3990,17 +3995,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 1000px) {
+@media (min-width: 100px) {
   .navbar-toggle {
     display: none;
   }
 }
 
-/*@media (max-width: 1000px) {
+@media (max-width: 100px) {
   .navbar-inverse {
     display: none;
   }
-}*/
+}
 
 
 .navbar-nav {
@@ -4009,9 +4014,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px;
+  line-height: 0px;
 }
-@media (max-width: 767px) {
+
+@media (max-width: 200px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -4027,7 +4033,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 20px;
+    line-height: 10px;
   }
   .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -5078,7 +5084,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel {
   margin-bottom: 20px;
-  background-color: #fff;
+  /*background-color: #fff;*/
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
