@@ -9,7 +9,7 @@ Date Created: December 25, 2014
 /* Font imports */
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800);
 body {
-    font-family: 'Lato',  sans-serif;
+    font-family: 'Lucida Sans',  sans-serif;
     /* font-family: 'Helvetica',  sans-serif; */
     color: #666;
     background-color: #fff;
@@ -19,23 +19,26 @@ body {
     top: 0;
 }
 h1 {
-    font-size: 36px;
+    font-family: 'Georgia',  sans-serif;
+    font-size: 42px;
     font-weight: normal;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 h2 {
+    font-family: 'Georgia',  sans-serif;
     font-size: 36px;
     font-weight: normal;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 h3 {
     font-size: 28px;
     font-weight: 600;
 }
 h4 {
-    font-size: 16px;
+    font-family: 'Lucida Sans',  sans-serif;
+    font-size: 21px;
     font-weight: 800;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 h5 {
     font-size: 14px;
@@ -87,39 +90,53 @@ a:focus {
 /* JM -- change this for header band and 
    main text colour */
 #header {
-    background: url(../img/2.jpg);
+    background: url(../img/3.png);
+    background-color: #014359;
     color: #FFFFFF;
     padding: 10px;
+    background-size: cover;
 }
 .title {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
 nav.footer {
     padding: 40px;
     color: #fff;
     text-align: center;
-    background-color: #222;
+    background-color: #323d43;
 }
 #team,
 #features,
 #testimonial,
 #button {
-    color: #424242;
+    color: #979e45;
     height: auto;
     text-align: center;
 }
 
+#counter {
+    background-color: #014359; 
+    /* background-image: linear-gradient(180deg, #323d43, #014359); */
+    /*background: url(../img/slides/1.jpg);*/
+    padding: 0px 0;
+    color: #fff;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 #about {
-    color: #fff;    
-    height: auto;   
+    color: #fff;  
+    height: auto;  
     text-align: center;
     /*background-color: #82D7F6; */
     font-size: 18px; 
-    /*background-image: linear-gradient(0deg, #555, #000);*/
+    /* background-image: linear-gradient(0deg, #323d43, #014359);*/
     /*background-image: url(img/slides/1.jpg);*/
-    background-color: #222;
+    background-color: #014359;
 }
 
 #news_and_tweets {
@@ -129,7 +146,7 @@ nav.footer {
     /*background-color: #829DF6;  */
     /*background: url(../img/2.jpg);*/
     /*background-image: linear-gradient(0deg, #09797B, #09157B);*/
-    background-color: #222;
+    background-color: #014359;
     background-repeat:no-repeat;
     display: compact;
     font-size: 20px;
@@ -309,7 +326,7 @@ span.t-position {
     opacity: 100;
 }
 .testimonial2 {
-    background-color: #f4f4f4;
+    background-color: #9ba3a6;
     height: auto;
     padding-top: 40px;
     padding-bottom: 80px;
@@ -346,16 +363,6 @@ span.t-position {
 /*=================================================================
     Item counter section
 ==================================================================*/
-
-#counter {
-    background-color: #222;
-    /*background: url(../img/slides/1.jpg);*/
-    padding: 0px 0;
-    color: #fff;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .counters-item {
     border: 1px solid #4e595f;
