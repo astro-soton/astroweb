@@ -15,826 +15,89 @@ $(document).ready(function() {
     });
 });
 </script>
-<title>People & | Soton Astro</title>
+<title>Contact | Soton Astro</title>
 <div id="header"></div>
+<!-- Add the above to the top of each page, change title to relevant page -->
+
+<div id="header">
+  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+  <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+
+  <script type='text/javascript'>
+            function init_map(){
+              var myOptions = {
+                zoom:12,center:new google.maps.LatLng(50.934560,-1.399759),
+                mapTypeId: google.maps.MapTypeId.ROADMAP};
+                map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.934560,-1.399759)});
+                infowindow = new google.maps.InfoWindow({content:'<font color="black"><strong>University of Southampton</strong><br>Physics & Astronomy, B46<br></font>'});
+                google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+                infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+
+</div>
 <!-- Add the above to the top of each page, change title to relevant page -->
 
 
 <body>
-  <!-- About Section -->
-  <section id="about">
-    <div class="space"></div> <!-- 40px Vertical Spacing -->
-    <div class="space"></div> <!-- 40px Vertical Spacing -->
-    <div class="space"></div> <!-- 40px Vertical Spacing -->
-    <div class="space"></div> <!-- 40px Vertical Spacing -->
 
-    <!-- <div class="title">
-        <h2>About Us</h2>
-    </div> -->
-    <div class="container"> <!-- Container -->  
-    <h1>Staff and Students</h1>
-    <p>To get more information about the non-astro staff members of the School of Physics and Astronomy, and their contact details, please use the "School links" menu on the right.</p>
-    <p>To phone from outside, dial the prefix <strong>+44-(0)23-8059</strong> and the last four numbers of the extension. Do NOT dial all five numbers of the extension after the prefix. To call from inside the university, simply dial the five digit extension number.
-      Our departmental fax number is <strong>+44-(0)-23-8059-3910</strong>. Please indicate the name of the addressee on the first page of the fax.</p>
-    </div>
-
+<section id="about" >
 
     <div class="space"></div> <!-- 40px Vertical Spacing -->
-    <h3>Academics</h3>
-    <div class="container"> <!-- Container -->  
+    <div class="space"></div> <!-- 40px Vertical Spacing -->
+    <div class="container"> <!-- Container -->
+      <div class="space"></div> <!-- 40px Vertical Spacing -->
         <div class="row">
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/diego_altamirano_small.gif" class="img-responsive" alt="...">
-                    <h5>Dr. Diego Altamirano  <br><span class="t-position"> Lecturer</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">d.altamirano</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>Black Hole Binaries and X-ray Timing</h6>
-                    </div>
-                </div>
-            </div>
+          <div class="col-md-6" align="left">
+            <h2>Where to find us</h2>
 
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/tony_bird_small.gif" class="img-responsive" alt="...">
-                    <h5>Prof. Tony Bird  <br><span class="t-position">Director of Programs</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">t.bird</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>High-mass X-ray binaries. High energy astrophysics.</h6>
-                    </div>
-                </div>
-            </div>
+            School of Physics &amp; Astronomy, B46  <br> 
+            University of Southampton   <br>
+            Southampton, Hampshire <br>
+            SO17 1BJ    <br>
+            United Kingdom <br>
+            <br>
+            <br>
+            To contact individual group members, take a look at the 
+            <a href="people.html">People</a> page.
 
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/christian_knigge_small.gif" class="img-responsive" alt="...">
-                    <h5>Prof. Christian Knigge  <br><span class="t-position">Head of Group</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">c.knigge</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>Interacting binaries. Multiwavelength Astronomy. AGN.</h6>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/phil_charles_small.gif" class="img-responsive" alt="...">
-                    <h5>Prof. Phil Charles  <br><span class="t-position">Professor</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">p.charles</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>Low-mass X-ray binaries. Optical/X-ray astronomy. V404 Cygnus.</h6>
-                    </div>
-                </div>
-            </div>
+            <h2>How to get here</h2>
 
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/judith_croston_small.gif" class="img-responsive" alt="...">
-                    <h5>Dr. Judith Croston  <br><span class="t-position">Lecturer</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">p.charles</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>Radio galaxies.</h6>
-                    </div>
-                </div>
-            </div>
+            <h3> By Car </h3>
+            The University of Southampton Highfield Campus is 5 minutes drive from the end of the M3 motorway (junction 14). The Physics &amp; Astronomy building is best reached from Chamberlain Road, by turning left off The Avenue on to Highfield Lane, then left again onto Hawthorn Road. Parking is limited, however.
 
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/caitriona_jackman_small.gif" class="img-responsive" alt="...">
-                    <h5>Dr. Caitriona Jackman<br><span class="t-position">Lecturer</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">c.jackman</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>Space environment physics. Aurora.</h6>
-                    </div>
-                </div>
-            </div>
+            <h3> By Train or Plane </h3>
+
+            <p>
+            Southampton Airport Parkway train station is closest station to the University and is also directly adjecent to Southampton Airport. From Gatwick Airport, it is best to take the train via Clapham Junction (approx. 1h 40m). From Heathrow Airport it is easiest to take a direct coach (approx. 1 hr) with <a href="http://www.nationalexpress.com/wherewego/airports/heathrow-airport.aspx" target="_blank" >National Express</a>. Alternatively take a <a href="http://www.railair.com/" target="_blank" >RailAir</a> coach to either Woking or Reading and then catch the train to Southampton Airport parkway, or take the London Underground to Victoria train station and catch the train from there (both approx. 2hr).
+            </p>
+
+            <p>
+            Train times can be found at <a href="http://www.nationalrail.co.uk/" target="_blank" >http://www.nationalrail.co.uk/</a>
+            </p>
+
+            <p>
+            From the Southampton Airport Parkway station (and directly outside Southampton Airport), the Unilink U1 bus goes directly to Highfield Campus. There are is also a taxi rank - it is a 10 minute drive to Highfield Campus.
+            </p>
 
           </div>
-          <!-- START A NEW ROW OF PEOPLE -->
-          <div class="row">
 
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/malcolm_coe_small.gif" class="img-responsive" alt="...">
-                    <h5>Prof. Malcolm Coe <br><span class="t-position">Senior Tutor / Professor</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">m.coe</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>High-mass X-ray Binaries.</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/sebastian_hoenig_small.gif" class="img-responsive" alt="...">
-                    <h5>Dr. Sebastien Hoenig  <br><span class="t-position">Lecturer</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">s.hoenig</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>Infra-red astronomy. AGN. Dust.</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/ian_mchardy_small.gif" class="img-responsive" alt="...">
-                    <h5>Prof. Ian Mchardy<br><span class="t-position">Lecturer</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">i.mchardy</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>X-ray astronomy. AGN.</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/mark_sullivan.jpg" class="img-responsive" alt="...">
-                    <h5>Prof. Mark Sullivan<br><span class="t-position">Professor</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">m.sullivan</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>Supernovae. Cosmology.</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/poshak_gandhi_small.gif" class="img-responsive" alt="...">
-                    <h5>Dr. Poshak Gandhi<br><span class="t-position">Lecturer</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">p.gandhi</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>X-ray astronomy. AGN.</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/robert_fear_small.jpg" class="img-responsive" alt="...">
-                    <h5>Dr. Robert Fear<br><span class="t-position"></span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">r.fear</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>Space Environment Physics. Aurora</h6>
-                    </div>
-                </div>
-            </div>
-
+          <div class="col-md-6" align="left">
+            
+            <div id='gmap_canvas' style='height:440px;width:700px;align:right;'></div>
+          
           </div>
-          <!-- START A NEW ROW OF PEOPLE -->
-          <div class="row">
 
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/daniel_whiter_small.gif" class="img-responsive" alt="...">
-                    <h5>Dr. Daniel Whiter<br><span class="t-position"></span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">d.whiter</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>Space Environment Physics. Aurora</h6>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/robert_fear_small.jpg" class="img-responsive" alt="...">
-                    <h5>Dr. Francesco Shankar<br><span class="t-position"></span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">f.shankar</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>Galaxy Evolution. AGN.</h6>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>       
-    </div> <!-- End Container -->
-
-    <div class="space"></div> <!-- 40px Vertical Spacing -->
-
-    <h3>Post-doctoral Researchers</h3>
-    <div class="container"> <!-- Container --> 
-          <!-- START A NEW ROW OF PEOPLE -->
-          <div class="row">
-
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/malcolm_coe_small.gif" class="img-responsive" alt="...">
-                    <h5>Prof. Malcolm Coe <br><span class="t-position">Senior Tutor / Professor</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">m.coe</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>High-mass X-ray Binaries.</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/sebastian_hoenig_small.gif" class="img-responsive" alt="...">
-                    <h5>Dr. Sebastien Hoenig  <br><span class="t-position">Lecturer</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">s.hoenig</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>Infra-red astronomy. AGN. Dust.</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/ian_mchardy_small.gif" class="img-responsive" alt="...">
-                    <h5>Prof. Ian Mchardy<br><span class="t-position">Lecturer</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">i.mchardy</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>X-ray astronomy. AGN.</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/mark_sullivan.jpg" class="img-responsive" alt="...">
-                    <h5>Prof. Mark Sullivan<br><span class="t-position">Professor</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">m.sullivan</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>Supernovae. Cosmology.</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/poshak_gandhi_small.gif" class="img-responsive" alt="...">
-                    <h5>Dr. Poshak Gandhi<br><span class="t-position">Lecturer</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2">p.gandhi</font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                    <div class="t-caption2">
-                    <h6>X-ray astronomy. AGN.</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/john_coxon_small.gif" class="img-responsive" alt="...">
-                    <h5>John Coxon<br><span class="t-position">Postdoctoral Researcher</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-        </div> 
-
-
-    </div> <!-- End Container -->
-
-
-    <div class="space"></div> <!-- 40px Vertical Spacing -->
-
-
-    <h3>Postgraduate Students</h3>
-    <div class="container"> <!-- Container --> 
-          <!-- START A NEW ROW OF PEOPLE -->
-          <div class="row">
-          
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/peter_boorman_small.gif" class="img-responsive" alt="...">
-                    <h5>Peter Boorman<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/judith_ineson_small.gif" class="img-responsive" alt="...">
-                    <h5>Judith Ineson<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/juan_hernandez_santisteban_small.gif" class="img-responsive" alt="...">
-                    <h5>Juan Hernandez Santisteban<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/joe_reed_small.gif" class="img-responsive" alt="...">
-                    <h5>Joe Reed<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/jamie_court_small.gif" class="img-responsive" alt="...">
-                    <h5>Jamie Court<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            </div>
-          <!-- START A NEW ROW OF PEOPLE -->
-          <div class="row">
-          
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/jade_reidy_small.gif" class="img-responsive" alt="...">
-                    <h5>Jade Reidy<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/georgios_dimitriadis_small.gif" class="img-responsive" alt="...">
-                    <h5>Georgios Dimitriadis<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/david_williams_small.gif" class="img-responsive" alt="...">
-                    <h5>David Williams<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/chris_boon_small.gif" class="img-responsive" alt="...">
-                    <h5>Chris Boon<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/bella_boulderstone_small.gif" class="img-responsive" alt="...">
-                    <h5>Bella Boulderstone<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/andy_smith_small.gif" class="img-responsive" alt="...">
-                    <h5>Andy Smith<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            </div>
-          <!-- START A NEW ROW OF PEOPLE -->
-          <div class="row">
-          
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/alex_clarke_small.gif" class="img-responsive" alt="...">
-                    <h5>Alex Clarke<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/aarran_shaw_small.gif" class="img-responsive" alt="...">
-                    <h5>Aarran Shaw<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/szymon_prajs_small.gif" class="img-responsive" alt="...">
-                    <h5>Szymon Prajs<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/stewart_buchan_small.gif" class="img-responsive" alt="...">
-                    <h5>Stewart Buchan<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/steve_browett_small.gif" class="img-responsive" alt="...">
-                    <h5>Steve Browett<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/sam_mangham_small.gif" class="img-responsive" alt="...">
-                    <h5>Sam Mangham<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-          </div>
-          <!-- START A NEW ROW OF PEOPLE -->
-          <div class="row">
-          
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/sam_connolly_small.gif" class="img-responsive" alt="...">
-                    <h5>Sam Connolly<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-2 col-sm-2 col-lg-2">
-                <div class="t-style2">
-                    <img src="img/team/rory_brown_small.gif" class="img-responsive" alt="...">
-                    <h5>Rory Brown<br><span class="t-position">PhD Student</span></h5>
-                    <div class="t-social2"> <!-- Developer's Social Connect -->
-                        <!--<a href="#"><i class="fa fa-linkedin tsocial"></i></a> <!-- Replace # with Your Linkedin URL -->
-                        <!--<a href="#"><i class="fa fa-facebook tsocial"></i></a> <!-- Replace # with Your Facebook URL -->
-                        <!--<a href="#"><i class="fa fa-google-plus tsocial"></i></a> <!-- Replace # with Your Google + URL -->
-                        <!--<a href="#"><i class="fa fa-pinterest tsocial"></i></a> <!-- Replace # with Your Pinterest URL -->
-                        <a href="#" target="_blank"><i class="fa fa-dribbble tsocial"></i></a> <!-- Replace # with Your Dribbble URL -->
-                        <a href="#"><i class="fa fa-twitter tsocial"></i></a>
-                        <p><a href="#"><i class="fa fa-envelope tsocial"></i><font size="2"></font></a></p>
-                         <!-- Replace # with Your Twitter URL -->
-                    </div>
-                </div>
-            </div>
-
-            
-
-
-            
         </div>
 
-    </div> <!-- End Container -->
+      </div> <!-- End Container -->
+    </div>
 
     <div class="space"></div> <!-- 40px Vertical Spacing -->
-  </section>
+    <div class="space"></div> <!-- 40px Vertical Spacing -->
+
+</section>
 
         <!--
     Start Counter Section
