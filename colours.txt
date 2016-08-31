@@ -14,3 +14,21 @@
 
 # greener blue
 #09797B
+
+
+# University scheme
+#014359
+#007275 
+#0a96a9
+#323d43
+#979e45
+#9ba3a6
+
+
+# University scheme 2
+#8a412b
+#ab1210
+#f00f2c
+#323d43
+#fe3e14
+#ffb300
