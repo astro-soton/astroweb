@@ -94,6 +94,22 @@
       </div>
     </div>
   </div>
+
+<script type="text/javascript">
+<!-->
+var image1=new Image()
+image1.src="img/slides/1.jpg"
+var image2=new Image()
+image2.src="img/slides/2.jpg"
+var image3=new Image()
+image3.src="img/slides/3.jpg"
+var image4=new Image()
+image4.src="img/slides/4.jpg"
+var image5=new Image()
+image5.src="img/slides/5.jpg"
+//-->
+</script>
+
 </header>
 <title>Home | Soton Astro</title>
 <div id="header"></div>
@@ -121,7 +137,21 @@
           </div>
           <div class="col-md-6" align="left">
             <div class="space"></div> <!-- 40px Vertical Spacing -->
-            <img src="img/slides/3.jpg" width="80%" align="right" alt="...">
+            <img src="img/slides/1.jpg" name="slide" width="80%" align="right" alt="...">
+	    <script type="text/javascript">
+	      <!--
+		  var step=1
+		  function slideit(){
+		  document.images.slide.src=eval("image"+step+".src")
+		  if(step<5)
+		  step++
+		  else
+		  step=1
+		  setTimeout("slideit()",2500)
+		  }
+		  slideit()
+		  //-->
+	    </script>
           </div>
 
       </div>
