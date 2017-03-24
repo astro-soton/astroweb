@@ -196,6 +196,12 @@ span.t-position {
     text-transform: none;
     font-weight: normal;
 }
+span.t-position2 {
+    font-size: 12px;
+    vertical-align: middle;
+    text-transform: none;
+    font-weight: normal;
+}
 .t-style2 {
     border: 1px solid #565d67;
     padding-bottom: 20px;
